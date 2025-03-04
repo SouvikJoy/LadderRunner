@@ -7,6 +7,15 @@ body {
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   cursor: pointer;
+  touch-action: none;
+}
+
+#game {
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none;    /* Firefox */
+  -ms-user-select: none;     /* IE */
+  user-select: none;         /* Standard */
+  touch-action: none;        /* Prevents default touch behavior */
 }
 
 .container {
@@ -14,6 +23,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100%;
+  touch-action: none; /* Prevents default touch actions like scrolling */
 }
 
 #score {
@@ -22,6 +32,11 @@ body {
   right: 30px;
   font-size: 2em;
   font-weight: 900;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  touch-action: none;
 }
 
 #introduction {
@@ -33,6 +48,11 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   text-align: center;
   transition: opacity 2s;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  touch-action: none;
 }
 
 #restart {
@@ -48,10 +68,20 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   display: none;
   cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  touch-action: none;
 }
 
 #perfect {
   position: absolute;
   opacity: 0;
   transition: opacity 2s;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  touch-action: none;
 }
