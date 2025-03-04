@@ -8,12 +8,35 @@
 </head>
 <body>
     <div class="container">
-        <div id="score"></div>
+        <div id="score">0</div>
+        <div id="powerUp" class="power-up-container"></div> <!-- Container for power-up icons -->
+        <div id="shieldIndicator" class="shield-indicator" style="display: none;">🛡️</div> <!-- Persistent shield indicator -->
         <canvas id="game" width="375" height="375"></canvas>
-        <div id="introduction">Hold down the mouse to stretch out a stick</div>
+        <div id="introduction">Hold down the screen to stretch out a stick</div>
         <div id="perfect">DOUBLE SCORE</div>
         <button id="restart">RESTART</button>
-      </div>
-      <script src="js/index.js"></script>
+        <button id="mute" style="display: block;">Mute Music</button>
+        <div id="leaderboard" style="display: none;">
+            <h3>Leaderboard</h3>
+            <ul id="leaderboardList"></ul>
+        </div>
+    </div>
+    <audio id="backgroundMusic" loop>
+        <source src="audio/background.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <audio id="stretchSound">
+        <source src="audio/stretch.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="landSound">
+        <source src="audio/land.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="fallSound">
+        <source src="audio/fall.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="starSound">
+        <source src="audio/star.mp3" type="audio/mpeg">
+    </audio>
+    <script src="js/index.js"></script>
 </body>
 </html>
